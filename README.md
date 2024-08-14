@@ -1,9 +1,8 @@
-# VirtualMuseum
-A virtual museum tour, implemented in Unity as part of my studies' Human Computer Interaction course.
+# Virtual Museum
 
 ![Screenshot!](screenshots/screen_1920x1080_0.jpg)
 
-This application was developed in Unity (version 2018), as a project for my Human Computer Interaction course, during my Computer Science & Engineering studies at the University of Ioannina.
+This application was developed in the Unity game engine (version 2018), as a project for my Human Computer Interaction course, during my Computer Science & Engineering studies at the University of Ioannina.
 
 The project involves porting a museum tour to virtual space for the purpose of entertainment, as well as to showcase a framework for studying visitor behaviour during their visit to a physical museum space. 
 
@@ -19,6 +18,46 @@ The second exhibition, located on the same wall as the other bonus room, is unlo
 
 ### Human Computer Interaction Metrics
 
-WIP...
+Another feature of this project, which was mentioned already, is recording metrics around the user's behaviour. After exiting the application, one can find the following metrics in the file "Metrics.txt".
+
+- Viewing time of each exhibit (the user was standing near and had a clear view of the exhibit)
+- Camera movement: total movement time, average movement speed (in degrees)
+- Time spend in each room (exhibit A, B, hallway)
+- Total walking distance and average walking speed
+
+### Installation
+There are no dependencies needed to run the application, except from the necessary GPU drivers, as provided by your GPU vendor.
+Unpack MuseumAlpha.rar, found [here](https://drive.google.com/drive/folders/1CUqxNglRo9HSoForRASVJbYqxA5p7acn?usp=sharing) and run "Museum Alpha.exe". 
 
 
+### Controls
+
+| Action  | Key binding |
+| ------------- | ------------- |
+| Move forward  | W |
+| Move backward  | S  |
+| Move left | A |
+| Move right | D |
+| Camera movement | Mouse |
+| Interact | E|
+| Quit application | F4 |
+
+#### Free camera controls
+| Action  | Key binding |
+| ------------- | ------------- |
+| Toggle free camera mode | C |
+| Move up vertically  | Ctrl |
+| Move down vertically  | Left Shift |
+| Take screenshot | K |
+
+Screenshots taken in free camera mode are stored in the "screenshots" folder, located in the application's main directory.
+
+#### Quiz controls
+The quiz utilizes the I, J, K, and L bindings to select a possible answer. This layout was chosen due to not being a familiar one to the user, contrary to the popular "WASD" layout commonly used in video games. The reasoning is that this way we avoid input errors due to sudden, habitual movements, while at the same time giving more time to the user to think (or remember) about the right answer, by slowing them down on purpose.
+
+### Resources used
+- Van Gogh Exhibition: Chopin Nocturnes Op. 9 No. 2 (A personal favourite)
+- Impressionism Exhibition: Chopin Nocturnes Op. 9 No. 1
+- Exhibit images were downloaded from Wikipedia Commons
+- Audio guide text to speech synthesis tool: http://www.fromtexttospeech.com (Daisy)
+- All Unity assets used were free assets attained from the Unity store
